@@ -1,0 +1,114 @@
+/* Pour les textes de base */
+ 
+
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%
+}
+
+ 
+h1 {
+    font-size: 2.6rem;
+    }
+
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-size: 3.6rem;
+}
+h4, h5{
+    font-size: 2.8rem;
+}
+li,
+button {
+    font-size: 2rem;
+}
+a {
+    color: snow;
+    text-decoration: none;
+}
+
+/* Header */
+
+.main-head {
+    background-color: rgba(30, 15, 42, 0.883);
+    color: snow;
+}
+nav {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    flex: 2 1 40rem ;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#logo {
+    flex: 1 2 40rem;
+
+}
+
+/* Hero */
+
+@font-face {
+    font-family: 'VIKING-N';
+    src: url('font/VIKING-N.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+    
+
+
+}
+.hero h2{
+    font-family: 'VIKING-N';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient( rgba(0 ,0, 0, 0.5),transparent), url('/images/pascal-debrunner-LKOuYT5_dyw-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 1rem;
+}
+button{
+    padding: 2rem 6rem;
+    background: rgba(30, 15, 42, 0.883);;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 885px){
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+}
