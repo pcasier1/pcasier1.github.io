@@ -180,7 +180,26 @@ header nav .right button:hover {
     color: inherit;
     background-color: var(--orange);
 }
-
+footer{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(#212441,#000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1.5rem;
+}
+footer h3{
+    color: var(--orange);
+    font-size: 2rem;
+}
+footer p{
+    cursor: pointer;
+    color: #ccc;
+}
+footer p:hover{
+    color: white;
+}
 
 
 
@@ -189,8 +208,10 @@ header nav .right button:hover {
         font-size: 0.5em;
     }
     header nav .right a{
+        align-items: column;
         text-align: center;
         font-size: 1em;
+        flex-wrap: wrap;
     }
     .presentation h1{
         font-size: 2em;
@@ -206,5 +227,11 @@ header nav .right button:hover {
     }
     .geo .image-carte {
         display: none;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .column{
+        width: 80%;
     }
 }
