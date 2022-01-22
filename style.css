@@ -128,10 +128,6 @@ nav li:hover .deroulant{
     width: 140px;
 }
 
-
-
-
-
 /*header button*/
 header nav .right button {  
     padding: 5px 15px;
@@ -149,6 +145,10 @@ header nav .right button a{
 header nav .right button:hover {
     color: inherit;
     background-color: var(--orange);
+}
+header nav .right button:hover a{
+    color: white;
+    transition: 0.5s;
 }
 
 
@@ -203,6 +203,10 @@ header nav .right button:hover {
     position: relative;
     top: 70px;
 }
+.presentation button a{
+    text-decoration: none;
+    color: white;
+}
 .presentation button:hover {
     background-color: inherit;
     color: var(--orange);
@@ -256,6 +260,10 @@ header nav .right button:hover {
     color: inherit;
     background-color: var(--orange);
 }
+.geo .geo-presentation button:hover a{
+    color: white;
+    transition: 0.5s;
+}
 
 /*footer*/
 
@@ -279,38 +287,11 @@ footer p{
 footer p:hover{
     color: white;
 }
-
-
-
-@media screen and (max-width: 640px){
-    header{
-        font-size: 0.5em;
-    }
-    header nav .right a{
-        align-items: column;
-        text-align: center;
-        font-size: 1em;
-        flex-wrap: wrap;
-    }
-    .presentation h1{
-        font-size: 2em;
-    }
-    .presentation p {
-        line-height: 1em;
-        font-size: 0,80em;
-        padding: 1.5em;
-    }
-    .presentation button {
-        font-size: 0.5em;
-        
-    }
-    .geo .image-carte {
-        display: none;
-    }
-    footer{
-        justify-content: center;
-    }
-    footer .column{
-        width: 80%;
-    }
+footer p a{
+    color: #ccc;
+    text-decoration: none;
+}
+footer p:hover a{
+    color: white;
+    text-decoration: none;
 }
