@@ -295,3 +295,35 @@ footer p:hover a{
     color: white;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 640px){
+    header{
+        font-size: 0.5em;
+    }
+    header nav .right {
+        flex-direction: column;
+        width: 95%;
+    }
+    .presentation h1{
+        font-size: 2em;
+    }
+    .presentation p {
+        line-height: 1em;
+        font-size: 0,80em;
+        padding: 1.5em;
+    }
+    .presentation button {
+        font-size: 0.5em;
+        
+    }
+    .geo .image-carte {
+        display: none;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .column{
+        width: 80%;
+    }
+}
