@@ -6,7 +6,6 @@
     font-weight: normal;
     font-style: normal;
 } 
-
 *{      
     margin: 0;
     padding: 0;
@@ -16,16 +15,19 @@
     --orange: #f38162;
 }
 body{
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-family: 'Work Sans', sans-serif;
-    color: white;
-    
+    color: white;  
 }
+
+/*header*/
+
 header{
-    background: linear-gradient(rgb(24, 18, 43),#2c244e,rgb(68, 56, 92));
+    background: linear-gradient(rgb(32, 21, 65),#2b205c,rgb(63, 55, 94));
+    /*(rgb(24, 18, 43),#2c244e,rgb(68, 56, 92))*/
 }
 header nav {
-    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,22 +43,96 @@ header nav h1{
     font-size: 30px;
 }
 
-header nav .right{
+header nav .right {
     display: flex;
     align-items: center;
     font-size: 18px;
     list-style: none;
 }
 header nav .right a{
-    margin: 0 15px 0 0;
+    margin: 0 30px 0 0;
     color: #ccc;
     text-decoration: none;
-    
+    display: inline-block;
 }
 header nav .right a:hover{
     color: white;
     cursor: pointer;
 }
+
+/*déroulant*/
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul >li{
+    float: left;
+    position: relative;
+}
+nav > ul > li > a{
+    padding: 32px 30px 32px 0;
+}
+nav > ul >li:hover a{
+    padding: 27px 30px 32px 0;;
+}
+
+nav li:hover .deroulant{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.deroulant{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+.deroulant li{
+    border-bottom:1px solid var(--orange);
+}
+.deroulant li a{
+    padding: 15px 0;
+    width: 170px;
+}
+.menu-deroulant:hover{
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
+
+.menu-deroulant-petit a{
+    padding: 42.5px 30px 42.5px 0;
+}
+.menu-deroulant-petit:hover a{
+    padding: 37.5px 30px 42.5px 0;
+}
+.menu-deroulant-petit .deroulant li a{
+    padding: 15px 0;
+    width: 140px;
+}
+
+
+
+
+
+/*header button*/
 header nav .right button {  
     padding: 5px 15px;
     font-size: 16px;
@@ -180,6 +256,9 @@ header nav .right button:hover {
     color: inherit;
     background-color: var(--orange);
 }
+
+/*footer*/
+
 footer{
     margin: 0;
     padding: 20px;
