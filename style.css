@@ -118,10 +118,10 @@ nav li:hover .deroulant{
 }
 
 .menu-deroulant-petit a{
-    padding: 42.5px 30px 42.5px 0;
+    padding: 42.5px 30px 42.5px ;
 }
 .menu-deroulant-petit:hover a{
-    padding: 37.5px 30px 42.5px 0;
+    padding: 37.5px 30px 42.5px;
 }
 .menu-deroulant-petit .deroulant li a{
     padding: 15px 0;
@@ -327,4 +327,3 @@ footer p:hover a{
         width: 80%;
     }
 }
-
