@@ -176,10 +176,13 @@ header nav .right button:hover a{
 .partie .text p{
     font-weight: 300;
     color: white;
+    line-height: 1.5rem;
+    padding: 15px;
+    font-size: 22.5px;
 }
 
 .text button{
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 15px 20px;
     font-size: 15px;
     border-radius: 10px;
@@ -218,13 +221,6 @@ header nav .right button:hover a{
 .partie .text .vidéo .minia-vidéo{
     padding: 20px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -267,6 +263,9 @@ footer p:hover a{
     header nav .right {
         flex-direction: column;
         width: 95%;
+    }
+    .partie .image{
+        display: none;
     }
     footer{
         justify-content: center;
