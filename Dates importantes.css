@@ -154,6 +154,10 @@ header nav .right button:hover a{
 /*Tableau*/
 .ensemble{
     background-color: #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title{
     padding: 75px;
@@ -171,8 +175,9 @@ header nav .right button:hover a{
     width: auto;
     box-shadow: 0 5px 50px #b3b387;
     cursor: pointer;
-    margin: auto;
+    margin: 100px auto;
     border: 1px solid #ddd;
+    margin-top: 0;
 }
 
 thead tr{
