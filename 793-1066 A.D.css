@@ -94,13 +94,9 @@ nav li:hover .deroulant{
 .deroulant li{
     border-bottom:1px solid var(--orange);
 }
-.deroulant li a{
-    padding: 15px 0;
-    width: 170px;
-}
 .menu-deroulant:hover{
     border-top: 5px solid var(--orange);
-    background-color: rgba(0, 0, 0,, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
 .menu-deroulant:hover .deroulant{
@@ -117,15 +113,25 @@ nav li:hover .deroulant{
     border-radius: 5px;
 }
 
+.menu-deroulant a{
+    padding: 42.5px 30px 42.5px ;
+}
+.menu-deroulant:hover a{
+    padding: 37.5px 30px 42.5px;
+}
 .menu-deroulant-petit a{
-    padding: 42.5px 30px 42.5px 0;
+    padding: 52.5px 30px 52.5px ;
 }
 .menu-deroulant-petit:hover a{
-    padding: 37.5px 30px 42.5px 0;
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant .deroulant li a{
+    padding: 15px 0;
+    width: 170px;
 }
 .menu-deroulant-petit .deroulant li a{
     padding: 15px 0;
-    width: 140px;
+    width: 170px;
 }
 
 /*header button*/
