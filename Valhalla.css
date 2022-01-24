@@ -94,10 +94,6 @@ nav li:hover .deroulant{
 .deroulant li{
     border-bottom:1px solid var(--orange);
 }
-.deroulant li a{
-    padding: 15px 0;
-    width: 170px;
-}
 .menu-deroulant:hover{
     border-top: 5px solid var(--orange);
     background-color: rgba(15, 184, 113, 0.15);
@@ -117,15 +113,25 @@ nav li:hover .deroulant{
     border-radius: 5px;
 }
 
-.menu-deroulant-petit a{
+.menu-deroulant a{
     padding: 42.5px 30px 42.5px ;
 }
-.menu-deroulant-petit:hover a{
+.menu-deroulant:hover a{
     padding: 37.5px 30px 42.5px;
+}
+.menu-deroulant-petit a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant .deroulant li a{
+    padding: 15px 0;
+    width: 170px;
 }
 .menu-deroulant-petit .deroulant li a{
     padding: 15px 0;
-    width: 140px;
+    width: 170px;
 }
 
 /*header button*/
@@ -263,10 +269,10 @@ footer p:hover a{
     }
     .sec1.content-top{
        flex-direction: column;
-    
+    }
     .sec1.content-center{
        flex-direction: column-reverse;
-    
+    }
     .sec1.content-bottom{
         flex-direction: column;
     }
@@ -279,7 +285,7 @@ footer p:hover a{
        display: flex;
        flex-direction: column;
        align-items: center;
-    
+    }
     .sec1.content-bottom .left{
         display: flex;
         flex-direction: column;
