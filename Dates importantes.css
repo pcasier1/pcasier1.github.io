@@ -250,11 +250,11 @@ footer p:hover a{
 
 @media (max-width: 940px) {
 
-    .tableau-style tbody, tr, td {
+    .table tbody, tr, td {
         display: block;
         height: 100%;
     }
-    .tableau-style th {
+    .table th {
         display: block;
     }
 
