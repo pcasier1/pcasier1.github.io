@@ -248,6 +248,17 @@ footer p:hover a{
     text-decoration: none;
 }
 
+@media (max-width: 940px) {
+
+    .tableau-style tbody, tr, td {
+        display: block;
+        height: 100%;
+    }
+    .tableau-style th {
+        display: block;
+    }
+
+}
 
 @media screen and (max-width: 640px){
     header{
