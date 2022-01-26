@@ -258,15 +258,6 @@ footer p:hover a{
     .content-bottom .left{
         max-width: 700px;
     }
-}
-@media screen and (max-width: 1500px){
-    header{
-        font-size: 0.5em;
-    }
-    header nav .right {
-        flex-direction: column;
-        width: 95%;
-    }
     .sec1.content-top{
        flex-direction: column;
     }
@@ -302,6 +293,15 @@ footer p:hover a{
     .sec1 .titre{
         justify-content: center;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 640px){
+    header{
+        font-size: 0.5em;
+    }
+    header nav .right {
+        flex-direction: column;
+        width: 95%;
     }
 
     footer{
