@@ -35,7 +35,7 @@ header nav {
     width: 95%;
     margin: auto;
     min-height: 10vh;
-    }
+}
 header nav h1{
     margin: 0;
     text-transform: uppercase;
@@ -113,6 +113,15 @@ nav li:hover .deroulant{
     background-color: rgba(65, 57, 179, 0.5);
     border-radius: 5px;
 }
+.menu-deroulant-petit2:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
 .menu-deroulant a{
     padding: 42.5px 30px 42.5px ;
 }
@@ -125,14 +134,25 @@ nav li:hover .deroulant{
 .menu-deroulant-petit:hover a{
     padding: 47.5px 30px 52.5px;
 }
+.menu-deroulant-petit2 a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit2:hover a{
+    padding: 47.5px 30px 52.5px;
+}
 .menu-deroulant .deroulant li a{
-    padding: 15px 0;
-    width: 170px;
+    padding: 15px 0 15px 5px;
+    width: 240px;
 }
 .menu-deroulant-petit .deroulant li a{
-    padding: 15px 0;
+    padding: 15px 0 15px 5px;
     width: 170px;
 }
+.menu-deroulant-petit2 .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 220px;
+}
+
 
 /*header button*/
 header nav .right button {  
@@ -302,8 +322,16 @@ footer p:hover a{
     text-decoration: none;
 }
 
-
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1200px){
+    .image-carte{
+        width: 50%;
+    }
+    .geo-presentation{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 740px){
     header{
         font-size: 0.5em;
     }
@@ -311,6 +339,25 @@ footer p:hover a{
         flex-direction: column;
         width: 95%;
     }
+    header nav .right a{
+        margin: 0;
+    }
+    .menu-deroulant:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit2:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 640px){
+    
+
     .presentation h1{
         font-size: 2em;
     }
@@ -320,14 +367,14 @@ footer p:hover a{
         padding: 1.5em;
     }
     .presentation button {
-        font-size: 0.5em;
-        
+        font-size: 1em;
+        margin-bottom: 50px;
     }
     .geo .image-carte {
         display: none;
     }
     footer{
-        justify-content: center;
+        justify-content:flex-start;
     }
     footer .column{
         width: 80%;
