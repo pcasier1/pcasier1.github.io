@@ -198,7 +198,7 @@ section#GOT .container {
     padding: 60px 10px;
     border-radius: 15px;
     box-sizing: border-box;
-    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+    box-shadow: rgb(248, 87, 87) 0px 10px 50px -10px;
 }
 section#GOT .container .title{
     text-align: center;
