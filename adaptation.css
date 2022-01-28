@@ -233,7 +233,15 @@ header nav .right button:hover a{
     max-width: 800px;
     font-weight: 300;
 }
-
+.sec1 .content-top .right{
+    box-shadow: 0 5px 50px rgb(248, 87, 87);
+}
+.sec1 .content-center .left{
+    box-shadow: 0 5px 50px rgb(248, 87, 87);
+}
+.sec1 .content-bottom .right{
+    box-shadow: 0 5px 50px rgb(248, 87, 87);
+}
 
 
 /*footer*/
