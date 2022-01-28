@@ -140,6 +140,10 @@ nav li:hover .deroulant{
 .menu-deroulant-petit2:hover a{
     padding: 47.5px 30px 52.5px;
 }
+.menu-deroulant-petit2 .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 220px;
+}
 .menu-deroulant .deroulant li a{
     padding: 15px 0 15px 5px;
     width: 240px;
@@ -148,10 +152,7 @@ nav li:hover .deroulant{
     padding: 15px 0 15px 5px;
     width: 170px;
 }
-.menu-deroulant-petit2 .deroulant li a{
-    padding: 15px 0 15px 5px;
-    width: 220px;
-}
+
 
 
 /*header button*/
@@ -356,8 +357,6 @@ footer p:hover a{
     }
 }
 @media screen and (max-width: 640px){
-    
-
     .presentation h1{
         font-size: 2em;
     }
