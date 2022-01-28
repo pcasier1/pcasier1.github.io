@@ -315,8 +315,8 @@ footer p:hover a{
         margin: 35px;
     }
     .content img{
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
     }
     .content-top{
        flex-direction: column;
