@@ -112,6 +112,15 @@ nav li:hover .deroulant{
     background-color: rgba(248, 87, 87, 0.5);
     border-radius: 5px;
 }
+.menu-deroulant-petit2:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(248, 87, 87, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover .deroulant{
+    background-color: rgba(248, 87, 87, 0.5);
+    border-radius: 5px;
+}
 
 .menu-deroulant a{
     padding: 42.5px 30px 42.5px ;
@@ -125,9 +134,19 @@ nav li:hover .deroulant{
 .menu-deroulant-petit:hover a{
     padding: 47.5px 30px 52.5px;
 }
+.menu-deroulant-petit2 a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit2:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant-petit2 .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 220px;
+}
 .menu-deroulant .deroulant li a{
-    padding: 15px 0;
-    width: 170px;
+    padding: 15px 0 15px 5px;
+    width: 240px;
 }
 .menu-deroulant-petit .deroulant li a{
     padding: 15px 0;
@@ -249,7 +268,7 @@ footer p:hover a{
         max-width: 700px;
     }
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 740px){
     header{
         font-size: 0.5em;
     }
@@ -257,12 +276,27 @@ footer p:hover a{
         flex-direction: column;
         width: 95%;
     }
-
+    header nav .right a{
+        margin: 0;
+    }
+    .menu-deroulant:hover .deroulant{
+        background-color: rgb(248, 87, 87);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit:hover .deroulant{
+        background-color: rgb(248, 87, 87);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit2:hover .deroulant{
+        background-color: rgb(248, 87, 87);
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 640px){
     footer{
-        justify-content: center;
+        justify-content:flex-start;
     }
     footer .column{
         width: 80%;
     }
 }
-
