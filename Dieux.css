@@ -148,7 +148,7 @@ nav li:hover .deroulant{
     width: 240px;
 }
 .menu-deroulant-petit .deroulant li a{
-    padding: 15px 0;
+    padding: 15px 0 15px 5px;
     width: 170px;
 }
 
