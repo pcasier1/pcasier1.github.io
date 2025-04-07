@@ -1,0 +1,348 @@
+/* Pour les textes de base */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+@font-face {
+    font-family: 'VIKING-N';
+    src: url('font/VIKING-N.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange: #f38162;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;  
+}
+
+/*header*/
+
+header{
+    background: linear-gradient(rgb(14, 44, 28),#165223,rgb(43, 122, 47));
+    /*(rgb(24, 18, 43),#2c244e,rgb(68, 56, 92))*/
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    min-height: 10vh;
+    }
+header nav h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 30px;
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    list-style: none;
+}
+header nav .right a{
+    margin: 0 30px 0 0;
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav .right a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*déroulant*/
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul >li{
+    float: left;
+    position: relative;
+}
+nav > ul > li > a{
+    padding: 32px 30px 32px 0;
+}
+nav > ul >li:hover a{
+    padding: 27px 30px 32px 0;;
+}
+
+nav li:hover .deroulant{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.deroulant{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+.deroulant li{
+    border-bottom:1px solid var(--orange);
+}
+.menu-deroulant:hover{
+    border-top: 5px solid var(--orange);
+    background-color: rgba(14, 44, 28, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant:hover .deroulant{
+    background-color: rgba(14, 44, 28, 0.75);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(14, 44, 28, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover .deroulant{
+    background-color: rgba(14, 44, 28, 0.75);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(14, 44, 28, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover .deroulant{
+    background-color: rgba(14, 44, 28, 0.75);
+    border-radius: 5px;
+}
+
+.menu-deroulant a{
+    padding: 42.5px 30px 42.5px ;
+}
+.menu-deroulant:hover a{
+    padding: 37.5px 30px 42.5px;
+}
+.menu-deroulant-petit a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant-petit2 a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit2:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant-petit2 .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 220px;
+}
+.menu-deroulant .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 240px;
+}
+.menu-deroulant-petit .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 170px;
+}
+
+/*header button*/
+header nav .right button {  
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button a{
+    text-decoration: none;
+    color: var(--orange);
+}
+header nav .right button:hover {
+    color: inherit;
+    background-color: var(--orange);
+}
+header nav .right button:hover a{
+    color: white;
+    transition: 0.5s;
+}
+
+ /*contact*/
+
+section{
+    width: 100%;
+    min-height: 90vh;
+    background: linear-gradient( rgba(0 ,0, 0, 0.5),transparent), url('/images/viking\ bateau\ drakkar.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+section#contact {
+    background-color: #f9f9fb;
+    padding: 100px 15px;
+}
+section#contact .container{
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214 214 214) 0px 10px 50px -10px;
+}
+section#contact .container .title{
+    text-align: center;
+    color: rgb(43, 122, 47);
+    margin-bottom: 50px;
+}
+section#contact .container .title h6{
+    font-size: 1.6em;
+    
+}
+section#contact .container .title h3{
+    font-size: 4em;
+    
+}
+section#contact .container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+section#contact .container form input{
+    width: 45%;
+}
+section#contact .container form input:hover,
+section#contact .container form textarea:hover{
+    border-bottom: 2px solid var(--orange);
+}
+section#contact .container form input,
+section#contact .container form textarea{
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e9e9e9;
+    transition: 0.2s;
+}
+section#contact .container form textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 60px;
+}
+section#contact .container form button{
+    width: 192px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+    transition: color 0.5s, background-color 0.5s;
+}
+section#contact .container form button a{
+    text-decoration: none;
+    color: white;
+}
+section#contact .container form button:hover {
+    background-color: inherit;
+    color: var(--orange);
+}
+
+/*footer*/
+
+footer{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(#044d3b,#000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1.5rem;
+}
+footer h3{
+    color: var(--orange);
+    font-size: 2rem;
+}
+footer p{
+    cursor: pointer;
+    color: #ccc;
+}
+footer p:hover{
+    color: white;
+}
+footer p a{
+    color: #ccc;
+    text-decoration: none;
+}
+footer p:hover a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 740px){
+    header{
+        font-size: 0.5em;
+    }
+    header nav .right {
+        flex-direction: column;
+        width: 95%;
+    }
+    header nav .right a{
+        margin: 0;
+    }
+    .menu-deroulant:hover .deroulant{
+        background-color: rgb(14, 44, 28);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit:hover .deroulant{
+        background-color: rgb(14, 44, 28);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit2:hover .deroulant{
+        background-color: rgb(14, 44, 28);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    section#contact .container form{
+        flex-direction: column;
+        width: 95%;
+    }
+    section#contact .container form input{
+        width: 100%;
+    }
+    section#contact .container .title h6{
+        font-size: 1;
+    }
+    section#contact .container .title h3{
+        font-size: 2;
+    }
+}
+@media screen and (max-width: 640px){
+    footer{
+        justify-content:flex-start;
+    }
+    footer .column{
+        width: 80%;
+    }
+}

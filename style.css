@@ -1,0 +1,381 @@
+/* Pour les textes de base */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+@font-face {
+    font-family: 'VIKING-N';
+    src: url('font/VIKING-N.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+} 
+*{      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange: #f38162;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;  
+}
+
+/*header*/
+
+header{
+    background: linear-gradient(rgb(32, 21, 65),#2b205c,rgb(63, 55, 94));
+    /*(rgb(24, 18, 43),#2c244e,rgb(68, 56, 92))*/
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    min-height: 10vh;
+}
+header nav h1{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 30px;
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    list-style: none;
+}
+header nav .right a{
+    margin: 0 30px 0 0;
+    color: #ccc;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav .right a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*déroulant*/
+
+nav > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul >li{
+    float: left;
+    position: relative;
+}
+nav > ul > li > a{
+    padding: 32px 30px 32px 0;
+}
+nav > ul >li:hover a{
+    padding: 27px 30px 32px 0;;
+}
+
+nav li:hover .deroulant{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.deroulant{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+.deroulant li{
+    border-bottom:1px solid var(--orange);
+}
+
+.menu-deroulant:hover{
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover {
+    border-top: 5px solid var(--orange);
+    background-color: rgba(65, 57, 179, 0.15);
+    border-radius: 5px;
+}
+.menu-deroulant-petit2:hover .deroulant{
+    background-color: rgba(65, 57, 179, 0.5);
+    border-radius: 5px;
+}
+.menu-deroulant a{
+    padding: 42.5px 30px 42.5px ;
+}
+.menu-deroulant:hover a{
+    padding: 37.5px 30px 42.5px;
+}
+.menu-deroulant-petit a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant-petit2 a{
+    padding: 52.5px 30px 52.5px ;
+}
+.menu-deroulant-petit2:hover a{
+    padding: 47.5px 30px 52.5px;
+}
+.menu-deroulant-petit2 .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 220px;
+}
+.menu-deroulant .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 240px;
+}
+.menu-deroulant-petit .deroulant li a{
+    padding: 15px 0 15px 5px;
+    width: 170px;
+}
+
+
+
+/*header button*/
+header nav .right button {  
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button a{
+    text-decoration: none;
+    color: var(--orange);
+}
+header nav .right button:hover {
+    color: inherit;
+    background-color: var(--orange);
+}
+header nav .right button:hover a{
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+/* presentation */
+
+.presentation{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(0 ,0, 0, 0.5),transparent), url('/images/pascal-debrunner-LKOuYT5_dyw-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white;  
+}
+
+.presentation h1{
+    margin: 0;
+    font-size: 6vw;
+    font-family: 'VIKING-N';
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.presentation p{
+    font-weight: 300;
+    color: #e9e9e9;
+    line-height: 2.5rem;
+    padding: 1rem;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+.presentation button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--orange);
+    color: white;
+    border: 1px solid var(--orange);
+    transition: color 0.5s, background-color 0.5s;
+    position: relative;
+    top: 70px;
+}
+.presentation button a{
+    text-decoration: none;
+    color: white;
+}
+.presentation button:hover {
+    background-color: inherit;
+    color: var(--orange);
+}
+
+/*geo*/
+
+.geo {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    background: linear-gradient(#212441,#253991,#212441) ;
+}
+.geo .geo-presentation{
+    padding: 30px 5%;
+    margin-top: 5%;
+    width: 100%;
+    flex-shrink: 3;
+}
+.geo .geo-presentation h1{
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+.geo .geo-presentation p{
+    font-weight: 300;
+    color: #e9e9e9;
+}
+.geo .geo-presentation #texte-change {
+    color: var(--orange);
+}
+
+.geo .geo-presentation button{
+    position: relative;
+    top: 50px;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: inherit;
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+.geo .geo-presentation button a{
+    text-decoration: none;
+    color: var(--orange);
+}
+.geo .geo-presentation button:hover {
+    color: inherit;
+    background-color: var(--orange);
+}
+.geo .geo-presentation button:hover a{
+    color: white;
+    transition: 0.5s;
+}
+
+/*footer*/
+
+footer{
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(#212441,#000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1.5rem;
+}
+footer h3{
+    color: var(--orange);
+    font-size: 2rem;
+}
+footer p{
+    cursor: pointer;
+    color: #ccc;
+}
+footer p:hover{
+    color: white;
+}
+footer p a{
+    color: #ccc;
+    text-decoration: none;
+}
+footer p:hover a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px){
+    .image-carte{
+        width: 50%;
+    }
+    .geo-presentation{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 740px){
+    header{
+        font-size: 0.5em;
+    }
+    header nav .right {
+        flex-direction: column;
+        width: 95%;
+    }
+    header nav .right a{
+        margin: 0;
+    }
+    .menu-deroulant:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+    .menu-deroulant-petit2:hover .deroulant{
+        background-color: rgb(65, 57, 179);
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 640px){
+    .presentation h1{
+        font-size: 2em;
+    }
+    .presentation p {
+        line-height: 1em;
+        font-size: 0,80em;
+        padding: 1.5em;
+    }
+    .presentation button {
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+    .geo .image-carte {
+        display: none;
+    }
+    footer{
+        justify-content:flex-start;
+    }
+    footer .column{
+        width: 80%;
+    }
+}
